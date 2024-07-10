@@ -1,0 +1,178 @@
+* body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+
+    box-sizing: border-box;
+
+}
+:root{
+    font-size: 62.5%;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+		animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+  }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.page{
+    display: flex;
+    height: 100vh;
+
+    padding: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-wrapper{
+
+    margin-top: -15rem;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    width: 428px;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+.box-wrapper h1{
+    color: #34355B;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    font-weight: 700;
+
+    
+    
+}
+.box-wrapper p {
+    font-family: "DM Sans", sans-serif;
+    color: #34355B;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2.0rem;
+
+    margin-bottom: 2.6rem;
+}
+.screenOne img{
+    transition: .3s;
+    
+}
+.screenOne img:hover{
+ 
+ animation: bounce 0.5s infinite;
+
+ cursor: pointer;
+}
+@keyframes bounce {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.0); }
+    50% { transform: scale(1.0, 0.9); }
+    75% { transform: scale(0.9, 1.0); }
+  }
+/* ScreenTwo */
+
+.screenTwo{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    gap: 1.7rem;
+}
+.screenTwo .card{
+    max-width: 30.0rem;
+    display: flex;
+    padding: .8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0rem;
+
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+    animation: bounce-in 3s ease backwards;
+}
+@keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(.0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    
+  }
+.screenTwo .card p{
+    color: #000;
+    text-align: center;
+    font-family: "Dancing Script",cursive;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+   
+}
+.screenTwo img{
+    margin: 4.3rem 0;
+    animation:bounce-in-2 1s;
+}
+@keyframes bounce-in-2 {
+    0% {
+      opacity: 0;
+      transform: scale(5);
+    }
+
+
+    100% { transform: scale(1); }
+  }
+
+  
+
+.screenTwo button{
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #FF9500;
+
+
+    color: #FFF;
+
+    text-align: center;
+    font-family: "DM Sans",sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+
+
+    
+}
+button:hover{
+    cursor: pointer;
+    background: #976b2d;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <title>Fortune Cookie</title>
+  </head>
+  <body>
+    <div class="page">
+      <main>
+        <div class="box-wrapper">
+          <div class="screenOne">
+            <h1>
+              Qual é sua sorte <br />
+              de hoje?
+            </h1>
+            <p>Abra o biscoito e descubra!</p>
+            <div class="img">
+              <img src="./assets/cookie.svg"
+              id="fortuneClick"alt="imagem de um biscoito" />
+            </div>
+          </div>
+          <div class="screenTwo hide" >
+            <h1>
+              Aqui está sua sorte <br />
+              de hoje:
+            </h1>
+            <div class="card">
+              <p id="textCard">
+                Se alguém está tão cansado que não possa te dar um sorriso,
+                deixa-lhe o teu.
+              </p>
+            </div>
+            <div class="img-two">
+              <img src="./assets/opened-cookie.png" alt="biscoito aberto" />
+            </div>
+            <button id="btn-reload">Abrir outro biscoito</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
